@@ -1,11 +1,5 @@
 import { generateMessage } from './generateMessage';
 
-// test('it should return FizzBuzz for divison of 3 and 5', () => {
-// 	const inputNumber = 15;
-// 	const result = generateMessage(inputNumber);
-// 	expect(result).toBe('FizzBuzz');
-// });
-
 describe('Check for generateMessage return value', () => {
 	it('should return FizzBuzz for divison of 3 and 5', () => {
 		const inputNumber = 15;
