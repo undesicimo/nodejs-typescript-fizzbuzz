@@ -38,6 +38,7 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 lib/
+*.js
 
 # Dependency directories
 node_modules/
@@ -55,7 +56,7 @@ web_modules/
 # Optional eslint cache
 .eslintcache
 
-# Optional stylelint cache
+# Optional stylelint cache  
 .stylelintcache
 
 # Microbundle cache
