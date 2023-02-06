@@ -1,11 +1,16 @@
 export const generateMessage = (n: number): string => {
-	if (n % 3 === 0 && n % 5 === 0) {
+	const fizzBuzzNumber = n % 3 === 0 && n % 5 === 0;
+	const fizzNumber = n % 3 === 0;
+	const buzzNumber = n % 5 === 0;
+
+	if (fizzBuzzNumber) {
 		return 'FizzBuzz';
-	} else if (n % 3 === 0) {
-		return 'Fizz';
-	} else if (n % 5 === 0) {
-		return 'Buzz';
-	} else {
-		return n.toString();
 	}
-}
+	if (fizzNumber) {
+		return 'Fizz';
+	}
+	if (buzzNumber) {
+		return 'Buzz';
+	}
+	return n.toString();
+};
