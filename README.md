@@ -5,4 +5,5 @@
 ```
 $ tsc //typescriptをコンパイルする
 $ node lib/fizzbuzz.js //nodeにてプログラムを実行
+$ npm run test //テスト実行する。
 ```
