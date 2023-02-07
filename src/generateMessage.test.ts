@@ -32,3 +32,34 @@ describe('Check for generateMessage return value', () => {
 		expect(result).toBe('FizzBuzz');
 	});
 });
+
+const testCases = [
+	{
+		inputNumber: 1,
+		expectedResult: '1',
+	},
+	{
+		inputNumber: 8,
+		expectedResult: '8',
+	},
+	{
+		inputNumber: 30,
+		expectedResult: 'FizzBuzz',
+	},
+	{
+		inputNumber: 9,
+		expectedResult: 'Fizz',
+	},
+	{
+		inputNumber: 5,
+		expectedResult: 'Buzz',
+	},
+];
+
+test.each(testCases)(
+	' Parameterized fizzbuzz test',
+	({ inputNumber, expectedResult }) => {
+		const fizzBuzzOutput = generateMessage(inputNumber);
+		expect(fizzBuzzOutput).toBe(expectedResult);
+	}
+);
