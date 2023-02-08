@@ -1,15 +1,11 @@
-function fizzBuzz(num: number): void {
-	for (let i = 1; i <= num; i++) {
-		if (i % 5 === 0 && i % 3 === 0) {
-			console.log(`FizzBuzz`);
-		} else if (i % 3 === 0) {
-			console.log(`Fizz`);
-		} else if (i % 5 === 0) {
-			console.log(`Buzz`);
-		} else {
-			console.log(i);
-		}
-	}
-}
+import { generateMessage } from './generateMessage';
 
-fizzBuzz(30);
+const fizzbuzz = () => {
+	const input = 30;
+
+	for (let i = 1; i <= input; i++) {
+		console.log(generateMessage(i));
+	}
+};
+
+fizzbuzz();
